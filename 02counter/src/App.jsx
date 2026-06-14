@@ -8,7 +8,17 @@ function App() {
     counter++;
     if(counter>20) counter = 20;
     console.log("add value ",counter);
-    setCounter(counter)
+    
+    /*
+    “React batches state updates for performance, so if I call 
+    setCounter(counter++) multiple times, each call uses the old value of
+    counter and doesn’t accumulate correctly. To solve this, 
+    React provides a functional form of setState (or useState), 
+    where I pass a callback that receives the latest state. 
+    This ensures each update is applied sequentially, even when 
+    batched. That’s why setCounter(prev => prev + 1) works reliably.”
+    */
+
   }
   const removeValue = ()=>{
     counter--;

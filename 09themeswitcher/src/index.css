@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+
+  --card-bg: #ffffff;
+  --card-text: #111827;
+
+  --button-bg: #2563eb;
+  --button-text: white;
+}
+
+.dark {
+  --bg-color: #111827;
+  --text-color: #ffffff;
+
+  --card-bg: #1f2937;
+  --card-text: #ffffff;
+
+  --button-bg: #3b82f6;
+  --button-text: white;
+}

@@ -36,9 +36,11 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home/>} />
       <Route path='about' element={<About/>} >
-        <Route path='aditya' element={<User />}/> // This will route about as well as user page
+        <Route path='aditya/:userid' element={<User />}/> // This will route about as well as user page
       </Route>
-      <Route path='contact' element={<Contact/>} />
+      <Route path='contact' element={<Contact/>} >
+        <Route path='aditya/:userid' element={<User />}/>
+      </Route>
       <Route path='user/:userid' element={<User />} />
       <Route 
       loader={githubInfoLoader}

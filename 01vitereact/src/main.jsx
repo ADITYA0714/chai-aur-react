@@ -30,9 +30,11 @@ const anotherElement = (
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  ReactElement
+  <>
+  {/* ReactElement */}
+  <App />
+  </>
 )
-//  <App />
 // <MyApp /> 
 // ReactElement
 // read about babel

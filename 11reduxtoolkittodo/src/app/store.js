@@ -5,4 +5,4 @@ const store = configureStore({
     reducer: todoReducer
 })
 
-export default store
+export default store 

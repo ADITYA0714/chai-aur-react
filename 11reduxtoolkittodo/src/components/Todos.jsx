@@ -8,7 +8,7 @@ function Todos() {
 
   return (
     <>
-    <div></div>
+    <div>
     <ul className="list-none">
         {todos.map((todo) => (
           <li
@@ -38,6 +38,7 @@ function Todos() {
           </li>
         ))}
       </ul>
+      </div>
     </>
   )
 }

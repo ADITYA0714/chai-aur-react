@@ -129,6 +129,11 @@ export class Service{
             fileId
         )
     }
+
+    // Serves the original file, no image transformation needed
+    getFileView(fileId) {
+        return this.bucket.getFileView(conf.appwriteBucketId, fileId);
+    }
 }
 
 const service = new Service();

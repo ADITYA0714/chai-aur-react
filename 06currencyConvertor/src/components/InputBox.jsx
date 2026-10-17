@@ -1,7 +1,7 @@
-import React, {useId} from 'react'
+import {useId} from 'react'
 
 function InputBox({
-    label,
+    label, 
     amount,
     onAmountChange,
     onCurrencyChange,

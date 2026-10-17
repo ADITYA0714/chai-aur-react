@@ -8,7 +8,7 @@ function App() {
     counter++;
     if(counter>20) counter = 20;
     console.log("add value ",counter);
-    
+    setCounter(counter);
     /*
     “React batches state updates for performance, so if I call 
     setCounter(counter++) multiple times, each call uses the old value of

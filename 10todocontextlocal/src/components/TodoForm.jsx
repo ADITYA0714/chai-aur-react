@@ -11,7 +11,8 @@ function TodoForm() {
         if(!todo){
             return
         }
-        addTodo({todo, completed : false})
+        // addTodo({todo : todo, completed : false})
+        addTodo({todo, completed : false}) // as in new syntax, if key and value are of same name, we can write only one time
         setTodo("")
     }
 
